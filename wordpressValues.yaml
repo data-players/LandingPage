@@ -1,3 +1,5 @@
+## use chart https://github.com/kubernetes/charts/tree/master/stable/wordpress
+#
 ## Bitnami WordPress image version
 ## ref: https://hub.docker.com/r/bitnami/wordpress/tags/
 ##
