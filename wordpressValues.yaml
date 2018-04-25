@@ -1,14 +1,6 @@
 ## Bitnami WordPress image version
 ## ref: https://hub.docker.com/r/bitnami/wordpress/tags/
 ##
-image:
-  registry: docker.io
-  repository: bitnami/wordpress
-  tag: 4.9.5
-  pullPolicy: IfNotPresent
-## User of the application
-## ref: https://github.com/bitnami/bitnami-docker-wordpress#environment-variables
-##
 wordpressUsername: user
 
 ## Application password
