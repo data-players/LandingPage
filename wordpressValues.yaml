@@ -12,7 +12,7 @@ wordpressUsername: adminDP
 ## Admin email
 ## ref: https://github.com/bitnami/bitnami-docker-wordpress#environment-variables
 ##
-wordpressEmail: user@example.com
+wordpressEmail: data.players.contact@gmail.com
 
 ## First name
 ## ref: https://github.com/bitnami/bitnami-docker-wordpress#environment-variables
@@ -27,7 +27,7 @@ wordpressLastName: Players
 ## Blog name
 ## ref: https://github.com/bitnami/bitnami-docker-wordpress#environment-variables
 ##
-wordpressBlogName: User's Blog!
+wordpressBlogName: Data Players
 
 ## Table prefix
 ## ref: https://github.com/bitnami/bitnami-docker-wordpress#environment-variables
@@ -152,44 +152,6 @@ ingress:
   ## Set to true to enable ingress record generation
   enabled: false
 
-  ## The list of hostnames to be covered with this ingress record.
-  ## Most likely this will be just one host, but in the event more hosts are needed, this is an array
-  hosts:
-  - name: wordpress.local
-    ## Set this to true in order to enable TLS on the ingress record
-    ## A side effect of this will be that the backend wordpress service will be connected at port 443
-    tls: false
-    ## If TLS is set to true, you must declare what secret will store the key/certificate for TLS
-    tlsSecret: wordpress.local-tls
-    ## Ingress annotations done as key:value pairs
-    ## If you're using kube-lego, you will want to add:
-    ## kubernetes.io/tls-acme: true
-    ##
-    ## For a full list of possible ingress annotations, please see
-    ## ref: https://github.com/kubernetes/ingress-nginx/blob/master/docs/annotations.md
-    ##
-    ## If tls is set to true, annotation ingress.kubernetes.io/secure-backends: "true" will automatically be set
-    annotations:
-    #  kubernetes.io/ingress.class: nginx
-    #  kubernetes.io/tls-acme: true
-
-  secrets:
-  ## If you're providing your own certificates, please use this to add the certificates as secrets
-  ## key and certificate should start with -----BEGIN CERTIFICATE----- or
-  ## -----BEGIN RSA PRIVATE KEY-----
-  ##
-  ## name should line up with a tlsSecret set further up
-  ## If you're using kube-lego, this is unneeded, as it will create the secret for you if it is not set
-  ##
-  ## It is also possible to create and manage the certificates outside of this helm chart
-  ## Please see README.md for more information
-  # - name: wordpress.local-tls
-  #   key:
-  #   certificate:
-
-## Enable persistence using Persistent Volume Claims
-## ref: http://kubernetes.io/docs/user-guide/persistent-volumes/
-##
 persistence:
   enabled: true
   ## wordpress data Persistent Volume Storage Class
