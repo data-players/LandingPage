@@ -175,14 +175,11 @@ ingress:
   ## Most likely this will be just one host, but in the event more hosts are needed, this is an array
   hosts:
   - name: wordpress.local
-
     ## Set this to true in order to enable TLS on the ingress record
     ## A side effect of this will be that the backend wordpress service will be connected at port 443
     tls: false
-
     ## If TLS is set to true, you must declare what secret will store the key/certificate for TLS
     tlsSecret: wordpress.local-tls
-
     ## Ingress annotations done as key:value pairs
     ## If you're using kube-lego, you will want to add:
     ## kubernetes.io/tls-acme: true
