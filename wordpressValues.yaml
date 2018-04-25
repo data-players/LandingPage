@@ -1,14 +1,10 @@
-## use chart https://github.com/kubernetes/charts/tree/master/stable/wordpress
-## requiere chart https://kubernetes-charts.storage.googleapis.com/mariadb-2.1.1.tgz
-## command helm install --name my-release -f values.yaml stable/wordpress 
-#
 ## Bitnami WordPress image version
 ## ref: https://hub.docker.com/r/bitnami/wordpress/tags/
 ##
 image:
   registry: docker.io
   repository: bitnami/wordpress
-  tag: 4.9.4
+  tag: 4.9.5
   ## Specify a imagePullPolicy
   ## Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'
   ## ref: http://kubernetes.io/docs/user-guide/images/#pre-pulling-images
