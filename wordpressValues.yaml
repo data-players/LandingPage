@@ -1,4 +1,6 @@
 ## use chart https://github.com/kubernetes/charts/tree/master/stable/wordpress
+## requiere chart https://kubernetes-charts.storage.googleapis.com/mariadb-2.1.1.tgz
+## command hhelm install --name my-release -f values.yaml stable/wordpress 
 #
 ## Bitnami WordPress image version
 ## ref: https://hub.docker.com/r/bitnami/wordpress/tags/
