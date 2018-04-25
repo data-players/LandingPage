@@ -11,10 +11,10 @@ metadata:
 
 spec:
   rules:
-  - host : semantic-bus.org
+  - host : data-players.com
     http:
       paths:
-      - path : /landing
+      - path : /
         backend:
           serviceName: dp-wordpress
           servicePort: 80
