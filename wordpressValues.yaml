@@ -1,7 +1,7 @@
 ## Bitnami WordPress image version
 ## ref: https://hub.docker.com/r/bitnami/wordpress/tags/
 ##
-wordpressUsername: user
+wordpressUsername: adminDP
 
 ## Application password
 ## Defaults to a random 10-character alphanumeric string if not set
@@ -17,12 +17,12 @@ wordpressEmail: user@example.com
 ## First name
 ## ref: https://github.com/bitnami/bitnami-docker-wordpress#environment-variables
 ##
-wordpressFirstName: FirstName
+wordpressFirstName: Data
 
 ## Last name
 ## ref: https://github.com/bitnami/bitnami-docker-wordpress#environment-variables
 ##
-wordpressLastName: LastName
+wordpressLastName: Players
 
 ## Blog name
 ## ref: https://github.com/bitnami/bitnami-docker-wordpress#environment-variables
