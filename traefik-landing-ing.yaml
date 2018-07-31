@@ -20,5 +20,5 @@ spec:
           servicePort: 80
       - path : /config/
         backend:
-          serviceName: dp-config
+          serviceName: data-players-strongbox-service
           servicePort: 80
