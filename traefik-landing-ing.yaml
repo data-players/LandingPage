@@ -18,7 +18,7 @@ spec:
         backend:
           serviceName: dp-wordpress
           servicePort: 80
-      - path : /config/
+      - path : /config
         backend:
           serviceName: data-players-strongbox-service
           servicePort: 80
