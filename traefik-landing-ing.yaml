@@ -16,7 +16,7 @@ spec:
       paths:
       - path : /
         backend:
-          serviceName: dp-wordpress
+          serviceName: semanticbus-traefik-service
           servicePort: 80
       - path : /config
         backend:
